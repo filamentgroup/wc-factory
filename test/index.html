@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Factory Test Suite</title>
+	<!-- Load local QUnit. -->
+	<link rel="stylesheet" href="qunit.css" media="screen">
+	<script src="qunit.js"></script>
+    <!-- Load local lib and tests. -->
+    <script>this.customElements||document.write('<script src="//unpkg.com/document-register-element"><\x2fscript>');</script>
+    <script src="./tests.js" defer></script>
+
+	<script type="module">
+        import {Factory} from '../src/wc-factory.js';
+        window.factory = Factory;
+    </script>
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture">
+        
+	</div>
+</body>
+</html>
