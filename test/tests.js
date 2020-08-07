@@ -22,7 +22,6 @@
 
   
 
-	test();
     
     asyncTest( 'function factory works!', function(){
         expect(26);
