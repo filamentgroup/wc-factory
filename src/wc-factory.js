@@ -9,8 +9,10 @@ export class Factory extends HTMLElement {
 				elem[ func ] = new window[func](elem);
 				elem[func].elem = elem;
 				elem.classList.add( func + "-defined" );
-				elem[func].create();
-				elem.dispatchEvent( new Event("create." + func, {"bubbles":true, "cancelable":false}) );
+				if( elem[func].create ){
+					elem[func].create();
+					elem.dispatchEvent( new Event("create." + func, {"bubbles":true, "cancelable":false}) );
+				}
 			}
 		});
 	}
