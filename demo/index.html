@@ -12,13 +12,7 @@
     import {two} from './two.js';
     window.two = two;
   </script>
-  <script>
-    function three(){
-      this.create = function(){
-        alert(this.elem);
-      }
-    }
-  </script>
+
   <script type="module">
     import '../src/wc-factory.js';
   </script>
@@ -54,7 +48,7 @@
 </head>
 <body>
 
-    <a-component does="one two three">
+    <a-component does="one two">
         <p>This is a custom element with behaviors applied</p>
     </a-component>
 
