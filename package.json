@@ -1,18 +1,18 @@
 {
-    "version": "0.0.1",
-    "homepage": "https://github.com/filamentgroup/wc-factory/",
-    "author": {
-      "name": "Filament Group",
-      "email": "thegroup@filamentgroup.com"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git://github.com/filamentgroup/wc-factory.git"
-    },
-    "bugs": {
-      "url": "https://github.com/filamentgroup/wc-factory/issues/"
-    },
-    "main": "src/wc-factory.js",
-    "preview_url": "https://filamentgroup.github.io/wc-factory"
-  }
-  
+  "version": "0.0.1",
+  "homepage": "https://github.com/filamentgroup/wc-factory/",
+  "author": {
+    "name": "Filament Group",
+    "email": "thegroup@filamentgroup.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/filamentgroup/wc-factory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/filamentgroup/wc-factory/issues/"
+  },
+  "main": "src/wc-factory.js",
+  "preview_url": "https://filamentgroup.github.io/wc-factory"
+}
