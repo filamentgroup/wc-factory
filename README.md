@@ -43,7 +43,7 @@ That said, the factory will call some helpful methods if they are defined. For e
 
 ```js
 function one(){
-  this.create(){
+  this.create = function(){
       alert( this.elem + " was created!" );
   }
 }
@@ -53,10 +53,10 @@ Additionally, the `destroy` method will be called when the element is removed fr
 
 ```js
 function one(){
-  this.create(){
+  this.create = function(){
     alert( this.elem + " was created!" );
   }
-  this.destroy(){
+  this.destroy = function(){
       alert( this.elem + " was destroyed!" );
   }
 }
@@ -70,7 +70,7 @@ class One(){
     alert( this.elem + " was created!" );
   }
   destroy(){
-      alert( this.elem + " was destroyed!" );
+    alert( this.elem + " was destroyed!" );
   }
 }
 ```
@@ -92,7 +92,7 @@ When a create or destroy method is run, the factory will emit an event for each 
 Additionally, when a function runs, a "defined" class of that function's name will be added to the element:
 
 ```html
-<a-component does="one two one-defined two-defined">
+<a-component does="one two" class="one-defined two-defined">
   <p>Content goes here</p>
 </a-component>
 ```
@@ -110,6 +110,6 @@ document.querySelector("a-component").one.hello();
 
 ## Accessible components that use this factory:
 
-- Modal
+- [Modal](https://filamentgroup.github.com/wc-modal/)
 - Collapsible
 - Carousel
