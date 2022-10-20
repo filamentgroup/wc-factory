@@ -1,3 +1,5 @@
+:warning: This project is archived and the repository is no longer maintained. 
+
 # WC Factory
 
 A web component that behaves as a widget factory.
